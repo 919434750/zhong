@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{padding:0;margin:0;}
+			body,html{width:100%;height:100%;}
+			header{width:100%;height:20%;position: fixed;left: 0;top: 0;z-index: 9999;}
+			.h-t{width:100%;height:60%;background:#950908;display: inline-flex;}
+			.h-t .hleft{width:65%;height:100%;color:white;font-size: 80px;display: flex;align-items: center;justify-content:flex-end;font-weight: bold;}
+			.h-t .hright{width:35%;height:100%;font-size: 50px;display: flex;align-items: center;justify-content:flex-end;}
+			.h-t .hright a{display: block;width:102px;height:80px;border-radius:20px;background:red;margin-right:40px;
+			}
+			.h-t .hright a img{width:102px;height:80px;border-radius:20px;}
+			.h-b{height:40%;background:#9a9fa5;}
+			.h-b .nav{width:100%;height:100%;display:inline-flex;justify-content: space-around;align-items: center;}
+			.h-b .nav li{ width:9%;height:100%;list-style: none;font-size: 50px;display: flex;align-items: center;justify-content: center;}
+			section{width:100%;overflow: hidden;position:absolute; left: 0;top:20%;z-index:0}
+			.container{width:100%;overflow: hidden;}
+			.wrap{width:100%;background:#f3f4f6;display:inline-flex;flex-direction: row;flex-wrap: wrap;
+			justify-content:space-around;align-items:center;overflow: hidden;}
+			.wrap .oimg{width:430px;overflow: hidden;margin-top:5%}
+			.wrap .oimg dt{width:430px;height:430px;}
+			.wrap .oimg dt img{width:430px;height:430px;border: 0;}
+			.wrap .oimg dd{width:430px;height:150px;}
+			.wrap .oimg dd {width:430px;}
+			.wrap .oimg dd h5{height:100px;font-size:30px;}
+			.wrap .oimg dd  p{height:100px;font-size:30px;overflow: hidden;}
+			.wrap .oimg dd  p span{height:100px;font-size:30px;float: left;}
+			.wrap .oimg dd  p a{height:100px;font-size:30px;float: right;text-decoration: line-through;}
+			footer{width:100%;height:10%;background:#484850;position: fixed;left: 0;bottom: 0;z-index: 9999}
+			@font-face {font-family: 'iconfont';
+			    src: url('font/iconfont.eot'); /* IE9*/
+			    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			    url('font/iconfont.woff') format('woff'), /* chrome、firefox */
+			    url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			    url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+			}
+			.iconfont{
+			    font-family:"iconfont" !important;
+			    font-size:66px;font-style:normal;
+			    -webkit-font-smoothing: antialiased;
+			    -webkit-text-stroke-width: 0.2px;
+			    -moz-osx-font-smoothing: grayscale;
+			}
+			.fot{width:100%;height:100%;display:inline-flex;justify-content:space-around;align-items: center;}
+			.fot dl{width:25%;height:100%;color:white}			
+			.fot dl dt{height:50%;text-align: center;margin-top:5%}
+			.fot dl dd{font-size: 40px;text-align: center;height:30%;margin-top:5%}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="h-t">
+				<div class="hleft">新品上市</div>
+				<div class="hright"><a href="#"><img src="img/hg.jpg" alt="" /></a></div>
+			</div>
+			<div class="h-b">
+				<ul class="nav">
+					<li><i class="iconfont">&#xe600;</i></li>
+					<li><i class="iconfont">&#xe60a;</i></li>
+					<li><i class="iconfont">&#xe60c;</i></li>
+					<li><i class="iconfont">&#xe611;</i></li>
+					<li><i class="iconfont">&#xe607;</i></li>
+					<li><i class="iconfont">&#xe60e;</i></li>
+					<li><i class="iconfont">&#xe60d;</i></li>
+					<li><i class="iconfont">&#xe60b;</i></li>
+					<li><i class="iconfont">&#xe605;</i></li>
+					<li><i class="iconfont">&#xe60a;</i></li>
+				</ul>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="wrap">
+					<dl class="oimg">
+						<dt id="oimg1"></dt>
+						<dd id="text1">	
+						</dd>
+					</dl>
+					<dl class="oimg">
+						<dt id="oimg2"></dt>
+						<dd id="text2">	
+						</dd>
+					</dl>
+					<dl class="oimg">
+						<dt id="oimg3"></dt>
+						<dd id="text3">	
+						</dd>
+					</dl>
+					<dl class="oimg">
+						<dt id="oimg4"></dt>
+						<dd id="text4">	
+						</dd>
+					</dl>
+					
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="fot">
+				<dl>
+					<dt><i class="iconfont">&#xe60f;</i></dt>
+					<dd>首页</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont">&#xe602;</i></dt>
+					<dd>分类</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont">&#xe608;</i></dt>
+					<dd>购物车</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont">&#xe606;</i></dt>
+					<dd>我的秀</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont">&#xe601;</i></dt>
+					<dd>更多</dd>
+				</dl>
+				
+			</div>
+		</footer>
+	</body>
+	<script src="js/jquery-2.1.0.js"></script>
+	<script>
+	 window.onload=function(){
+		$(document).ready(function(){
+			var result;
+			$.ajax({
+				type:"get",
+				data:"",
+				dataType:"jsonp",
+				url:"http://datainfo.duapp.com/shopdata/getBanner.php",
+				/*async:true,*/			
+				success:function(data){
+					var oimg1=document.getElementById("oimg1");
+					var text1=document.getElementById("text1");
+					
+					var oimg2=document.getElementById("oimg2");
+					var text2=document.getElementById("text2");
+					
+					var oimg3=document.getElementById("oimg3");
+					var text3=document.getElementById("text3");
+					
+					var oimg4=document.getElementById("oimg4");
+					var text4=document.getElementById("text4");
+					console.log(data)
+		
+					var oiimgUrl=JSON.parse(data[0].goodsBenUrl);
+					var oName=data[0].goodsName;
+					var html= oiimgUrl[0];
+				
+					 oimg1.innerHTML='<img src="'+html+'"/>';
+					 text1.innerHTML='<h5>'+oName+'</h5><p><span>￥49</span><a>999元</a></p>';
+					 
+					var oiimgUrl1=JSON.parse(data[1].goodsBenUrl);
+					var oName1=data[1].goodsName;
+					var html1= oiimgUrl1[0];
+					
+					 oimg2.innerHTML='<img src="'+html1+'"/>';
+					 text2.innerHTML='<h5>'+oName1+'</h5><p><span>￥49</span><a>999元</a></p>';
+					 
+			
+					 
+					var oiimgUrl2=JSON.parse(data[2].goodsBenUrl);
+					var oName2=data[2].goodsName;
+					var html2= oiimgUrl2[0];
+					
+					 oimg3.innerHTML='<img src="'+html2+'"/>';
+					 text3.innerHTML='<h5>'+oName2+'</h5><p><span>￥49</span><a>999元</a></p>';
+					 console.log(html2)
+					  
+					var oiimgUrl3=JSON.parse(data[3].goodsBenUrl);
+					var oName3=data[3].goodsName;
+					var html3= oiimgUrl3[0];
+					 oimg4.innerHTML='<img src="'+html3+'"/>';
+					 text4.innerHTML='<h5>'+oName3+'</h5><p><span>￥49</span><a>999元</a></p>';
+					/*
+					var itemli2=document.getElementById("itemli2");
+					var oiimgUrl1=JSON.parse(data[1].goodsBenUrl);
+					var oName1=data[1].goodsName;
+					 var html1= oiimgUrl[1]
+					 console.log(oiimgUrl[1]);
+					itemli2.innerHTML='<img src="'+html1+'"/>'+'<div clsss="cont"><h5>'+oName1+'</h5><p><span>￥49</span><a>999</a></p></div>';
+					
+					var itemli3=document.getElementById("itemli3")
+					var oiimgUrl2=JSON.parse(data[2].goodsBenUrl);
+					var oName2=data[2].goodsName;
+					 var html2= oiimgUrl[2]
+					 console.log(oiimgUrl[2]);
+					itemli3.innerHTML='<img src="'+html2+'"/>'+'<div clsss="cont"><h5>'+oName2+'</h5><p><span>￥49</span><a>999</a></p></div>';
+					
+					var itemli4=document.getElementById("itemli4")
+					var oiimgUrl3=JSON.parse(data[3].goodsBenUrl);
+						var oName3=data[3].goodsName;
+					 var html3= oiimgUrl[3]
+					 console.log(oiimgUrl[3]);
+					itemli4.innerHTML='<img src="'+html3+'"/>'+'<div clsss="cont"><h5>'+oName3+'</h5><p><span>￥49</span><a>999</a></p></div>';*/
+					/*result=data;*/
+					/*for(var i=0;i<result.length;i++){
+						
+					}
+					*/
+				}
+			});
+			
+		})
+	}
+	</script>
+</html>
